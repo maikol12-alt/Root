@@ -48,7 +48,7 @@ class AdvancedMultiURLSpam:
         
         # Temporizador de URLs
         self.last_url_update = 0
-        self.url_update_interval = 120
+        self.url_update_interval = 300
         
         # Estadísticas
         self.url_stats = {}
@@ -398,8 +398,8 @@ if __name__ == "__main__":
     spam = AdvancedMultiURLSpam()
     
     # Configuración automática
-    duracion = 30000  # 30,000 segundos
-    workers = 40      # 40 workers
+    duracion = 300000000  # 30,000 segundos
+    workers = 50      # 40 workers
     
     print(f"⏱️  Duración: {duracion} segundos")
     print(f"👷 Workers: {workers}")
